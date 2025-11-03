@@ -1,30 +1,31 @@
 {
-  "name": "María González",
-  "bio": "Desarrolladora web full-stack apasionada por crear experiencias digitales accesibles y eficientes. Me encanta enseñar y compartir conocimiento.",
+  "name": "Alicia Sancho Ripoll",
+  "bio": "Diseñadora creativa y especialista en comunicación digital apasionada por el arte, la animación y la tecnología.",
   "profileImage": "https://placehold.co/600x400",
-  "occupation": "Desarrolladora Web",
-  "location": "Madrid, España",
+  "occupation": "Diseñadora y desarrolladora Web",
+  "location": "Valencia, España",
   "socialMedia": [
     {
       "platform": "GitHub",
-      "url": "https://github.com/mariagonzalez"
+      "url": "https://github.com/AlySaRi/"
     },
     {
       "platform": "LinkedIn",
-      "url": "https://linkedin.com/in/mariagonzalez"
+      "url": "https://www.linkedin.com/in/aliciasanchoripoll/"
     },
     {
-      "platform": "Twitter",
-      "url": "https://twitter.com/mariagonzalez"
-    }
+      "platform": "Instagram",
+      "url": "https://www.instagram.com/a_sandchild/"
+    },
+    { "platform": "ArtStation", 
+    "url": "https://www.artstation.com/sandchild"
+   }
   ],
   "interests": [
-    "JavaScript",
-    "CSS",
-    "Accesibilidad Web",
-    "Open Source",
-    "Fotografía",
-    "Senderismo"
+    "Arte digital",
+    "Videojuego",
+    "Diseño Web",
+    "Animación"
   ],
-  "email": "maria.gonzalez@example.com"
+  "email": "aly.sancho@example.com"
 }

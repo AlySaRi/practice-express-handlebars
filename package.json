@@ -1,0 +1,26 @@
+{
+  "name": "practice-express-handlebars",
+  "version": "1.0.0",
+  "description": "Vamos a construir un blog personal usando Express y Handlebars, con énfasis en iteraciones (`{{#each}}`), condicionales y datos dinámicos.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlySaRi/practice-express-handlebars.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlySaRi/practice-express-handlebars/issues"
+  },
+  "homepage": "https://github.com/AlySaRi/practice-express-handlebars#readme",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "express-handlebars": "^8.0.3"
+  },
+  "type": "module"
+}

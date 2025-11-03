@@ -1,0 +1,20 @@
+<h1>{{blogTitle}}</h1>
+<p>{{blogDescription}}</p>
+
+<div class="posts-grid">
+  {{#each posts}}
+    <article class="post-card">
+      <!-- Aquí va el contenido de cada post -->
+      <h2>{{this.title}}</h2>
+      <!-- Completa el resto... -->
+        <p class="excerpt">{{this.excerpt}}</p>
+      <p><strong>Autor:</strong> {{this.author}}</p>
+      <p><strong>Fecha:</strong> {{this.date}}</p>
+      <p><strong>Categoría:</strong> {{this.category}}</p>
+      <p><strong>Comentarios:</strong> {{this.comments}}</p>
+      <a href="/post/{{this.id}}">Leer más →</a>
+    </article>
+  {{else}}
+    <p>No hay posts disponibles.</p>
+  {{/each}}
+</div>

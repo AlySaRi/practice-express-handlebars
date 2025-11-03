@@ -1,0 +1,27 @@
+<h1>{{name}}</h1>
+
+<img src="{{profileImage}}" alt="{{name}}" class="profile-pic">
+
+<p><strong>Ocupación:</strong> {{occupation}}</p>
+<p><strong>Ubicación:</strong> {{location}}</p>
+<p><strong>Email:</strong> <a href="mailto:{{email}}">{{email}}</a></p>
+
+<p class="bio">{{bio}}</p>
+
+<h2>Redes Sociales</h2>
+<ul>
+  {{#each socialMedia}}
+    <li>
+      <a href="{{this.url}}" target="_blank">{{this.platform}}</a>
+    </li>
+  {{/each}}
+</ul>
+
+<h2>Intereses</h2>
+<ul>
+  {{#each interests}}
+    <li>{{this}}</li>
+  {{/each}}
+</ul>
+
+<a href="/">← Volver al inicio</a>

@@ -1,0 +1,23 @@
+<h1>{{post.title}}</h1>
+
+{{#if post.image}}
+  <img src="{{post.image}}" alt="{{post.title}}" class="post-image">
+{{/if}}
+
+<p><strong>Autor:</strong> {{post.author}} | <strong>Fecha:</strong> {{post.date}}</p>
+<p><strong>Categoría:</strong> {{post.category}}</p>
+
+<div class="post-content">
+  <p>{{post.content}}</p>
+</div>
+
+<h3>Tags:</h3>
+<div class="tags">
+  {{#each post.tags}}
+    <span class="tag">{{this}}</span>
+  {{/each}}
+</div>
+
+<p><strong>Comentarios:</strong> {{post.comments}}</p>
+
+<a href="/">← Volver a la lista</a>
