@@ -43,9 +43,15 @@ app.get('/post/:id', (req, res) => {
     return res.status(404).send('Post no encontrado');
   }
 
+  //Aquí añadimos el código del reto 2, Filtramos 3 posts de la misma categoría (excluyendo el actual)
+  const relatedPosts = blogData.posts
+    .filter(p => p.category === post.category && p.id !== post.id)
+    .slice(0, 3);
+
   res.render('post', {
     pageTitle: post.title,
-    post: post
+    post: post,
+    relatedPosts: relatedPosts,
   });
 });
 
@@ -69,5 +75,11 @@ app.get('/category/:categoryName', (req, res) => {
     blogTitle: `Posts de ${category}`,
     blogDescription: `Todos los artículos sobre ${category}`,
     posts: filteredPosts
+  });
+});
+
+app.use((req, res) => {
+  res.status(404).render('404', {
+    pageTitle: 'Página no encontrada'
   });
 });

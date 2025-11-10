@@ -122,3 +122,9 @@ footer {
     height: 150px;
   }
 }
+
+/* Posts relacionados */
+.related-posts-title {
+  margin-top: 2rem; /* espacio antes del título */
+  margin-bottom: 1rem; /* opcional: espacio entre título y posts */
+}

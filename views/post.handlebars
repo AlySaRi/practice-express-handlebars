@@ -21,3 +21,18 @@
 <p><strong>Comentarios:</strong> {{post.comments}}</p>
 
 <a href="/">← Volver a la lista</a>
+
+<br>
+
+{{#if relatedPosts.length}}
+   <h3 class="related-posts-title">Posts Relacionados</h3>
+  <div class="related-posts">
+    {{#each relatedPosts}}
+      <article class="post-card">
+        <h3>{{this.title}}</h3>
+        <p>{{this.excerpt}}</p>
+        <a href="/post/{{this.id}}">Leer más →</a>
+      </article>
+    {{/each}}
+  </div>
+{{/if}}
