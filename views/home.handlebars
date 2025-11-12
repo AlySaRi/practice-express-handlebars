@@ -1,7 +1,8 @@
 <h1>{{blogTitle}}</h1>
 <p>{{blogDescription}}</p>
 
-<div class="posts-grid">
+<div class="home-layout">
+  <div class="posts-grid">
   {{#each posts}}
     <article class="post-card">
       <!-- Aquí va el contenido de cada post -->
@@ -17,4 +18,15 @@
   {{else}}
     <p>No hay posts disponibles.</p>
   {{/each}}
+</div>
+  <!-- Menú lateral de categorías -->
+  <aside class="sidebar">
+    <h3>Categorías</h3>
+    <ul>
+      <li><a href="/">Ver todos</a></li> <!-- 👈 nueva opción -->
+      {{#each categories}}
+        <li><a href="/category/{{this}}">{{this}}</a></li>
+      {{/each}}
+    </ul>
+  </aside>
 </div>

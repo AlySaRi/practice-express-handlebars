@@ -18,6 +18,15 @@ app.set('views', './views');
 // Servir archivos estáticos
 app.use(express.static('public'));
 
+// Extraer categorías únicas
+const categories = [];
+for (let i = 0; i < blogData.posts.length; i++) {
+  const cat = blogData.posts[i].category;
+  if (!categories.includes(cat)) {
+    categories.push(cat);
+  }
+}
+
 // Aquí irán tus rutas...
 
 app.listen(PORT, () => {
@@ -30,7 +39,8 @@ app.get('/', (req, res) => {
     pageTitle: 'Inicio',
     blogTitle: blogData.blogTitle,
     blogDescription: blogData.blogDescription,
-    posts: blogData.posts
+    posts: blogData.posts,
+    categories: categories
   });
 });
 
@@ -74,7 +84,8 @@ app.get('/category/:categoryName', (req, res) => {
     pageTitle: `Categoría: ${category}`,
     blogTitle: `Posts de ${category}`,
     blogDescription: `Todos los artículos sobre ${category}`,
-    posts: filteredPosts
+    posts: filteredPosts,
+    categories: categories
   });
 });
 
